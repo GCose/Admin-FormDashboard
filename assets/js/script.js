@@ -20,6 +20,9 @@ themeToggle.addEventListener('change', () => {
     setTheme(newTheme);
 });
 
+/**==================
+ * Sidebar Toggle
+ ==================*/
 const sidebarToggle = document.getElementById('sidebar-toggle');
 const sidebar = document.getElementById('sidebar');
 const sidebarClose = document.getElementById('sidebar-close');
