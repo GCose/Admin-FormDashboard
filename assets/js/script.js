@@ -2,9 +2,22 @@
  * Theme Toggling
  =================*/
 const themeToggle = document.getElementById('theme-toggle');
-themeToggle.addEventListener('change', () => {
-    document.body.classList.toggle('dark-mode');
+
+function setTheme(theme) {
+    document.body.classList.toggle('dark-mode', theme === 'dark');
+    themeToggle.checked = theme === 'dark';
+    localStorage.setItem('theme', theme);
     updateCharts();
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const savedTheme = localStorage.getItem('theme') || 'light';
+    setTheme(savedTheme);
+});
+
+themeToggle.addEventListener('change', () => {
+    const newTheme = themeToggle.checked ? 'dark' : 'light';
+    setTheme(newTheme);
 });
 
 const sidebarToggle = document.getElementById('sidebar-toggle');
