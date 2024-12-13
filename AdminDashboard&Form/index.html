@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>G-Admin | Dashboard</title>
+
+    <!--==================== Font Link ====================-->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--==================== End of Font Link ====================-->
+
+    <!--==================== CSS Styles ====================-->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <!--==================== End of CSS Styles ====================-->
+  </head>
+  <body class="light-mode">
+    <div class="dashboard-wrapper">
+      <nav id="sidebar" class="sidebar">
+        <!--==================== Sidebar Header ====================-->
+        <div class="sidebar-header">
+          <div class="logo">
+            <svg viewBox="0 0 24 24" class="logo-icon">
+              <path
+                d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"
+              />
+            </svg>
+            <span class="sidebar-title">G-Dashboard</span>
+          </div>
+          <button id="sidebar-close" class="sidebar-close">&times;</button>
+        </div>
+        <!--==================== End of Sidebar Header ====================-->
+
+        <!--==================== Navigation Links ====================-->
+        <ul class="nav-links">
+          <!--==================== Navigation Link Item 1 ====================-->
+          <li class="active">
+            <a href="#"
+              ><svg viewBox="0 0 24 24">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z" /></svg
+              >Dashboard</a
+            >
+          </li>
+          <!--==================== End of Navigation Link Item 1 ====================-->
+
+          <!--==================== Navigation Link Item 2 ====================-->
+          <li>
+            <a href="#"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"
+                /></svg
+              >Projects</a
+            >
+          </li>
+          <!--==================== End of Navigation Link Item 2 ====================-->
+
+          <!--==================== Navigation Link Item 3 ====================-->
+          <li>
+            <a href="#"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M16 11c1.66 0 2.99-1.34 2.99-3S17.66 5 16 5c-1.66 0-3 1.34-3 3s1.34 3 3 3zm-8 0c1.66 0 2.99-1.34 2.99-3S9.66 5 8 5C6.34 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c-.29 0-.62.02-.97.05 1.16.84 1.97 1.97 1.97 3.45V19h6v-2.5c0-2.33-4.67-3.5-7-3.5z"
+                /></svg
+              >Team</a
+            >
+          </li>
+          <!--==================== End of Navigation Link Item 3 ====================-->
+
+          <!--==================== Navigation Link Item 4 ====================-->
+          <li>
+            <a href="#"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M19 3h-4.18C14.4 1.84 13.3 1 12 1c-1.3 0-2.4.84-2.82 2H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 0c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm2 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"
+                /></svg
+              >Tasks</a
+            >
+          </li>
+          <!--==================== End of Navigation Link Item 4 ====================-->
+
+          <!--==================== Navigation Link Item 5 ====================-->
+          <li>
+            <a href="#"
+              ><svg viewBox="0 0 24 24">
+                <path
+                  d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"
+                /></svg
+              >Reports</a
+            >
+          </li>
+          <!--==================== End of Navigation Link Item 5 ====================-->
+
+          <!--==================== Navigation Link Item 6 ====================-->
+          <li>
+            <a href="form.html">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"
+                />
+              </svg>
+              User Form
+            </a>
+          </li>
+          <!--==================== End of Navigation Link Item 6 ====================-->
+        </ul>
+        <!--==================== End of Navigation Links ====================-->
+
+        <!--==================== Theme Toggle ====================-->
+        <div class="theme-toggle">
+          <input type="checkbox" id="theme-toggle" class="theme-toggle-input" />
+          <label for="theme-toggle" class="theme-toggle-label"></label>
+        </div>
+        <!--==================== End of Theme Toggle ====================-->
+      </nav>
+
+      <!--==================== Main ====================-->
+      <main class="main-content">
+        <!--==================== Header Section ====================-->
+        <header class="top-bar">
+          <button id="sidebar-toggle" class="sidebar-toggle">☰</button>
+          <!--==================== Search Container ====================-->
+          <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input" />
+            <button class="search-btn">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                />
+              </svg>
+            </button>
+          </div>
+          <!--==================== End of Search Container ====================-->
+
+          <!--==================== User Actions  ====================-->
+          <div class="user-actions">
+            <button class="action-btn new-btn">New Project</button>
+            <div class="notifications">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
+                />
+              </svg>
+              <span class="notification-badge">3</span>
+            </div>
+            <div class="user-profile">
+              <img
+                src="https://i.pravatar.cc/100?img=2"
+                alt="User Avatar"
+                class="user-avatar"
+              />
+              <span class="user-name">Goodness</span>
+            </div>
+          </div>
+          <!--==================== End of User Actions  ====================-->
+        </header>
+        <!--==================== End of Header Section ====================-->
+
+        <!--==================== Dashboard Grid ====================-->
+        <div class="dashboard-grid">
+          <!--==================== Section 1 ====================-->
+          <section class="card project-overview">
+            <h2>Project Overview</h2>
+            <div class="chart-container">
+              <canvas id="projectChart"></canvas>
+            </div>
+            <div class="project-stats">
+              <div class="stat">
+                <span class="stat-value">24</span>
+                <span class="stat-label">Active Projects</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">67%</span>
+                <span class="stat-label">Overall Progress</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">18</span>
+                <span class="stat-label">Completed Tasks</span>
+              </div>
+            </div>
+          </section>
+          <!--==================== End of Section 1 ====================-->
+
+          <!--==================== Section 2 ====================-->
+          <section class="card task-list">
+            <h2>Recent Tasks</h2>
+            <ul id="taskList" style="max-height: 350px; overflow-y: auto">
+              <li>
+                <span class="task-name">Design new landing page</span>
+                <span class="task-status pending">Pending</span>
+              </li>
+              <li>
+                <span class="task-name">Implement user authentication</span>
+                <span class="task-status in-progress">In Progress</span>
+              </li>
+              <li>
+                <span class="task-name">Optimize database queries</span>
+                <span class="task-status completed">Completed</span>
+              </li>
+              <li>
+                <span class="task-name">Conduct usability testing</span>
+                <span class="task-status pending">Pending</span>
+              </li>
+              <li>
+                <span class="task-name">Set up CI/CD pipeline</span>
+                <span class="task-status in-progress">In Progress</span>
+              </li>
+            </ul>
+            <button id="addTaskBtn" class="action-btn">Add New Task</button>
+          </section>
+          <!--==================== End of Section 2 ====================-->
+
+          <!--==================== Section 3 ====================-->
+          <section class="card team-activity">
+            <h2>Team Activity</h2>
+            <div class="activity-feed" id="activityFeed">
+              <div class="activity-item">
+                <img
+                  src="https://i.pravatar.cc/100?img=1"
+                  alt="Team Member 1"
+                  class="activity-avatar"
+                />
+                <div class="activity-content">
+                  <p>
+                    <strong>Alice</strong> completed the frontend for the new
+                    feature
+                  </p>
+                  <span class="activity-time">2 hours ago</span>
+                </div>
+              </div>
+              <div class="activity-item">
+                <img
+                  src="https://i.pravatar.cc/100?img=2"
+                  alt="Team Member 2"
+                  class="activity-avatar"
+                />
+                <div class="activity-content">
+                  <p>
+                    <strong>Bob</strong> pushed a new commit to the main branch
+                  </p>
+                  <span class="activity-time">4 hours ago</span>
+                </div>
+              </div>
+              <div class="activity-item">
+                <img
+                  src="https://i.pravatar.cc/100?img=4"
+                  alt="Team Member 3"
+                  class="activity-avatar"
+                />
+                <div class="activity-content">
+                  <p><strong>Charlie</strong> created a new pull request</p>
+                  <span class="activity-time">Yesterday</span>
+                </div>
+              </div>
+            </div>
+            <button id="loadMoreActivity" class="action-btn">Load More</button>
+          </section>
+          <!--==================== End of Section 3 ====================-->
+
+          <!--==================== Section 4 ====================-->
+          <section class="card resource-usage">
+            <h2>Resource Usage</h2>
+            <div class="resource-charts">
+              <div class="resource-chart">
+                <canvas id="cpuChart"></canvas>
+                <p>CPU Usage</p>
+              </div>
+              <div class="resource-chart">
+                <canvas id="memoryChart"></canvas>
+                <p>Memory Usage</p>
+              </div>
+              <div class="resource-chart">
+                <canvas id="diskChart"></canvas>
+                <p>Disk Usage</p>
+              </div>
+            </div>
+          </section>
+          <!--==================== End of Section 4 ====================-->
+
+          <!--==================== Section 5 ====================-->
+          <section class="card upcoming-deadlines">
+            <h2>Upcoming Deadlines</h2>
+            <ul class="deadline-list" id="deadlineList">
+              <li>
+                <span class="deadline-project">Project Alpha</span>
+                <span class="deadline-date">May 15, 2023</span>
+                <div class="deadline-progress">
+                  <div class="progress-bar" style="width: 75%"></div>
+                </div>
+              </li>
+              <li>
+                <span class="deadline-project">Project Beta</span>
+                <span class="deadline-date">June 1, 2023</span>
+                <div class="deadline-progress">
+                  <div class="progress-bar" style="width: 40%"></div>
+                </div>
+              </li>
+              <li>
+                <span class="deadline-project">Project Gamma</span>
+                <span class="deadline-date">June 20, 2023</span>
+                <div class="deadline-progress">
+                  <div class="progress-bar" style="width: 10%"></div>
+                </div>
+              </li>
+              <li>
+                <span class="deadline-project">Project Delta</span>
+                <span class="deadline-date">July 10, 2023</span>
+                <div class="deadline-progress">
+                  <div class="progress-bar" style="width: 25%"></div>
+                </div>
+              </li>
+              <li>
+                <span class="deadline-project">Project Epsilon</span>
+                <span class="deadline-date">August 5, 2023</span>
+                <div class="deadline-progress">
+                  <div class="progress-bar" style="width: 5%"></div>
+                </div>
+              </li>
+            </ul>
+          </section>
+          <!--==================== End of Section 5 ====================-->
+
+          <!--==================== Section 6 ====================-->
+          <section class="card project-overview">
+            <h2>Activity Overview</h2>
+            <div class="chart-container">
+              <canvas id="activityChart"></canvas>
+            </div>
+            <div class="project-stats">
+              <div class="stat">
+                <span class="stat-value">24</span>
+                <span class="stat-label">Ongoing Activities</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">67%</span>
+                <span class="stat-label">Overall Progress</span>
+              </div>
+              <div class="stat">
+                <span class="stat-value">18</span>
+                <span class="stat-label">Completed Activities</span>
+              </div>
+            </div>
+          </section>
+          <!--==================== End of Section 6 ====================-->
+        </div>
+        <!--==================== End of Dashboard Grid ====================-->
+
+        <!--==================== Footer ====================-->
+        <footer class="footer">&copy; Goodness Adewuyi 2024</footer>
+        <!--==================== End of Footer ====================-->
+      </main>
+      <!--==================== End of Main ====================-->
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
