@@ -116,12 +116,45 @@
 
       <!--==================== Main ====================-->
       <main class="main-content">
-        <!--==================== Header ====================-->
+        <!--==================== Header Section ====================-->
         <header class="top-bar">
           <button id="sidebar-toggle" class="sidebar-toggle">☰</button>
-          <h1>User Form</h1>
+          <!--==================== Search Container ====================-->
+          <div class="search-container">
+            <input type="text" placeholder="Search..." class="search-input" />
+            <button class="search-btn">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"
+                />
+              </svg>
+            </button>
+          </div>
+          <!--==================== End of Search Container ====================-->
+
+          <!--==================== User Actions  ====================-->
+          <div class="user-actions">
+            <button class="action-btn new-btn">New Project</button>
+            <div class="notifications">
+              <svg viewBox="0 0 24 24">
+                <path
+                  d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.89 2 2 2zm6-6v-5c0-3.07-1.64-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.63 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"
+                />
+              </svg>
+              <span class="notification-badge">3</span>
+            </div>
+            <div class="user-profile">
+              <img
+                src="https://i.pravatar.cc/100?img=2"
+                alt="User Avatar"
+                class="user-avatar"
+              />
+              <span class="user-name">Goodness</span>
+            </div>
+          </div>
+          <!--==================== End of User Actions  ====================-->
         </header>
-        <!--==================== End of Header ====================-->
+        <!--==================== End of Header Section ====================-->
 
         <!--==================== Form Section ====================-->
         <section class="card form-section">
