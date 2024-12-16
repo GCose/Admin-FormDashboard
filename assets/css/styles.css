@@ -715,11 +715,19 @@ body {
 .form-group select,
 .form-group textarea {
     width: 100%;
+    border: none;
+    outline: none;
     padding: 10px;
     border-radius: 5px;
     color: var(--text-color);
-    border: 1px solid var(--border-color);
     background-color: var(--background-color);
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="email"]:focus,
+.form-group textarea:focus {
+    border: none;
+    outline: 1px solid var(--primary-color)
 }
 
 .form-group textarea {
@@ -728,8 +736,8 @@ body {
 }
 
 .radio-group {
-    display: flex;
     gap: 15px;
+    display: flex;
 }
 
 .radio-group input[type="radio"] {
@@ -739,7 +747,11 @@ body {
 /**********************
 * FORM RESULT STYLES
 **********************/
-#formResult {
+.form-section {
+    width: 100%;
+}
+
+.form-result {
     top: 0;
     left: 0;
     width: 100%;
@@ -753,7 +765,7 @@ body {
     background-color: rgba(0, 0, 0, 0.5);
 }
 
-#formResult .result-content {
+.form-result .result-content {
     width: 90%;
     padding: 40px;
     max-width: 500px;
@@ -764,7 +776,16 @@ body {
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
 }
 
-#formResult .close-btn {
+.result-header {
+    margin-bottom: 2rem;
+}
+
+.submitted-data p {
+    text-align: left;
+    padding-bottom: 20px;
+}
+
+.form-result .close-btn {
     top: 10px;
     right: 10px;
     border: none;
