@@ -448,7 +448,7 @@ body {
     animation: fadeIn 1s ease-in-out;
     background-color: var(--card-background);
     transition: box-shadow var(--transition-speed), transform var(--transition-speed);
-    box-shadow: 0 15px 15px -3px rgba(129, 141, 248, 0.147), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 20px 15px -3px rgba(155, 165, 255, 0.147), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
 }
 
 .card:hover {
