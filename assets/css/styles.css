@@ -117,7 +117,8 @@ body {
 }
 
 .sidebar-title {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
+    font-size: clamp(1.2rem, 1.0571428571428572rem + 0.7142857142857141vw, 1.4rem);
 }
 
 .logo {
@@ -886,17 +887,17 @@ body {
     }
 
     .resource-chart:nth-child(1) {
-        width: 40%;
+        width: 60%;
         grid-column: span 3;
     }
 
     .resource-chart:nth-child(2) {
-        width: 40%;
+        width: 60%;
         grid-column: span 3;
     }
 
     .resource-chart:nth-child(3) {
-        width: 40%;
+        width: 60%;
         grid-column: span 3;
     }
 
