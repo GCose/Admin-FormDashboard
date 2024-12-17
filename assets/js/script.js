@@ -75,7 +75,6 @@ const activityChart = new Chart(activityCtx, {
             label: 'Activity Progress',
             data: [30, 45, 57, 60, 75, 90],
             backgroundColor: getComputedStyle(document.documentElement).getPropertyValue('--primary-color'),
-            borderWidth: 2
         }]
     },
     options: {
