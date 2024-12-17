@@ -391,8 +391,19 @@ body {
     background-color: var(--danger-color);
 }
 
+/***********************
+ * BREAKPOINT STYLES
+***********************/
+
+@media (max-width: 1090px) {
+    .top-bar {
+        gap: 2rem;
+        flex-direction: column;
+    }
+}
+
 /********************
- * KEYFRAMES STYLES
+* KEYFRAMES STYLES
 ********************/
 @keyframes pulse {
     0% {
